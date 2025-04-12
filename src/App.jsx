@@ -2,7 +2,7 @@ import React from "react";
 import AddExpense from "./components/AddExpense";
 import SearchBar from "./components/SearchBar";
 import ExpenseList from "./components/ExpenseList";
-
+import "./App.css";
 const App = () => {
   return (
     <>
