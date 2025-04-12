@@ -7,9 +7,10 @@ const AddExpense = () => {
       <p>Enter your expense details below</p>
       <div className="AddExpenseForm">
         <form>
-          <input type="text" placeholder="Expense Name" />
-          <input type="number" placeholder="Expense Amount" />
-          <input type="text" placeholder="Expense Category" />
+          <input type="text" placeholder="Enter Expense Name" />
+          <input type="text" placeholder="Eneter Expense Description" />
+          <input type="text" placeholder="Enter Expense Category" />
+          <input type="number" placeholder="Enter Expense Amount" />
           <input type="date" placeholder="Expense Date" />
           <button type="submit">Submit</button>
         </form>
