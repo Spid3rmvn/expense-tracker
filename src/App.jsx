@@ -1,21 +1,23 @@
 import React from "react";
 import AddExpense from "./components/AddExpense";
-import SearchBar from "./components/SearchBar";
 import ExpenseList from "./components/ExpenseList";
+import { useState } from "react";
 import "./App.css";
 const App = () => {
+  const [expenses, setExpenses] = useState([]);
+  const addExpense = (newExpense) => {
+    setExpenses([...expenses, newExpense]);
+  };
   return (
     <>
-      <div className="header">
+      return (
+      <div className="app-container">
         <h1>Expense Tracker</h1>
-        <p>
-          Start taking control of your finances and life.Record cartegorize and
-          analyze your spending.
-        </p>
+        <div className="main-content">
+          <AddExpense onAddExpense={addExpense} />
+          <ExpenseList expenses={expenses} />
+        </div>
       </div>
-      <AddExpense />
-      <SearchBar />
-      <ExpenseList />
     </>
   );
 };
