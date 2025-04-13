@@ -1,31 +1,51 @@
-.ExpenseFormContainer {
-  font-family: sans-serif;
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 1.5px;
-  border: 2px solid #000000;
+.header {
+  padding: 2rem;
+  background-color: #f8f8f8;
   text-align: center;
-  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+.expense-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-.ExpenseFormContainer h2 {
-  margin-bottom: 1rem;
+.expense-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
 }
-.ExpenseFormContainer form {
+
+.expense-form form {
   display: flex;
   flex-direction: column;
-
-  justify-content: space-around;
-
   gap: 1rem;
 }
-.ExpenseFormContainer button {
-  padding: 0.6rem;
+
+.expense-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 1rem;
-  border-radius: 5px;
+}
+
+.expense-form button {
+  padding: 0.8rem;
   background-color: black;
   color: white;
   border: none;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.expense-form button:hover {
+  background-color: #333;
 }

@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <div>
+      <div className="header">
         <h1>Expense Tracker</h1>
         <p>
           Start taking control of your finances and life.Record cartegorize and
