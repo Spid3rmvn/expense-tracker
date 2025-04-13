@@ -12,7 +12,7 @@ const ExpenseList = ({ expenses }) => {
         <ul>
           {expenses.map((expense) => (
             <li key={expense.id}>
-              <strong>{expense.title}</strong> — ₦{expense.amount} <br />
+              <strong>{expense.title}</strong> — Ksh{expense.amount} <br />
               <small>
                 {expense.category} | {expense.date}
               </small>

@@ -1,41 +1,49 @@
 .app-container {
-  padding: 2rem;
-  font-family: sans-serif;
+  text-align: center;
+  padding: 3rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-layout {
   display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
+  gap: 3rem;
+  margin-top: 2rem;
 }
 
 .expense-form {
   flex: 1;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #f9f9f9;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .expense-form input {
   display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .expense-form button {
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
+  padding: 1rem 2rem;
+  background-color: #000000;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .searchExpense {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
   width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 ul {
@@ -44,33 +52,9 @@ ul {
 }
 
 li {
-  padding: 0.5rem;
+  padding: 1rem;
   background: #eee;
-  margin-bottom: 0.5rem;
-  border-radius: 4px;
-}
-.expense-list {
-  flex: 1;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #fdfdfd;
-}
-
-.searchExpense {
-  width: 100%;
-  padding: 0.5rem;
   margin-bottom: 1rem;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  background: #f0f0f0;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
