@@ -10,7 +10,6 @@ const App = () => {
   };
   return (
     <>
-      return (
       <div className="app-container">
         <h1>Expense Tracker</h1>
         <div className="main-content">
