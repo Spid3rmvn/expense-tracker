@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
 const AddExpense = ({ onAddExpense }) => {
   const [expense, setExpense] = useState({
@@ -19,28 +20,13 @@ const AddExpense = ({ onAddExpense }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
-    if (!expense.title || !expense.amount || !expense.date) {
-      alert("Please fill in required fields (title, amount, date).");
-      return;
-    }
-
-    // Add the expense (send to parent)
+    // Add the expense
     const newExpense = {
       ...expense,
       id: Date.now(), // Add unique ID
     };
 
-    onAddExpense(newExpense); // Callback to parent component
-
-    // Reset form
-    setExpense({
-      title: "",
-      category: "",
-      description: "",
-      amount: "",
-      date: "",
-    });
+    onAddExpense(newExpense);
   };
 
   return (
@@ -61,6 +47,7 @@ const AddExpense = ({ onAddExpense }) => {
           placeholder="Enter Category"
           value={expense.category}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -68,6 +55,7 @@ const AddExpense = ({ onAddExpense }) => {
           placeholder="Enter Description"
           value={expense.description}
           onChange={handleChange}
+          required
         />
         <input
           type="number"
