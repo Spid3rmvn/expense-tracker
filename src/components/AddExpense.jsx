@@ -2,14 +2,14 @@ import React from "react";
 import { useState } from "react";
 
 const AddExpense = ({ onAddExpense }) => {
-  const [expense, setExpense] = useState({
+  const initialExpenseState = {
     title: "",
     category: "",
     description: "",
     amount: "",
     date: "",
-  });
-
+  };
+  const [expense, setExpense] = useState(initialExpenseState);
   const handleChange = (e) => {
     setExpense({
       ...expense,
@@ -23,10 +23,10 @@ const AddExpense = ({ onAddExpense }) => {
     // Add the expense
     const newExpense = {
       ...expense,
-      id: Date.now(), // Add unique ID
+      id: Date.now(),
     };
-
     onAddExpense(newExpense);
+    setExpense(initialExpenseState);
   };
 
   return (
