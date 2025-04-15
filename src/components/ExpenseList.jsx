@@ -31,8 +31,9 @@ const ExpenseList = ({ expenses }) => {
         <ul>
           {filteredExpenses.map((expense) => (
             <li key={expense.id}>
-              <h2>{expense.title}</h2>Ksh{expense.amount} <br />
-              <h3>{expense.category}</h3>
+              <h2>{expense.title}</h2>
+              <p>Ksh{expense.amount}</p>
+              <p>{expense.category}</p>
               <p>{expense.description}</p>
               <p>{expense.date}</p>
             </li>
