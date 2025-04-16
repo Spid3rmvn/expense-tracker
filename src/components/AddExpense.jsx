@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const AddExpense = ({ onAddExpense }) => {
+  //The initial state of the expense
   const initialExpenseState = {
     title: "",
     category: "",
@@ -10,6 +11,7 @@ const AddExpense = ({ onAddExpense }) => {
     date: "",
   };
   const [expense, setExpense] = useState(initialExpenseState);
+  // Handle input changes
   const handleChange = (e) => {
     setExpense({
       ...expense,
@@ -18,6 +20,7 @@ const AddExpense = ({ onAddExpense }) => {
   };
 
   const handleSubmit = (e) => {
+    // Prevents the screen from refreshing when submitting
     e.preventDefault();
 
     // Add the expense
